@@ -1,1 +1,19 @@
-alert("Hello World!");
+let year = prompt("What is the year?");
+
+function leapYear(year) {
+    if (year % 4 === 0) {
+        if (year % 100 === 0) {
+            if (year % 400 === 0) {
+                return "Leap Year";
+            } else {
+                return "Not Leap Year";
+            }
+        } else {
+            return "Leap Year";
+        }
+    } else {
+        return "Not Leap Year";
+    }
+}
+
+alert(leapYear(year));
